@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" description="" endpoint="default" groupType="" id="getProduct" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://www.stuburl.com"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="stub.response" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false"/>
+        <stub-param value="{&#10;    &quot;id&quot;: &quot;{{objectId()}}&quot;,&#10;    &quot;index&quot;: &quot;{{index()}}&quot;,&#10;    &quot;guid&quot;: &quot;{{guid()}}&quot;,&#10;    &quot;stockAvailable&quot;: &quot;{{bool()}}&quot;,&#10;    &quot;cost&quot;: &quot;{{concat(&quot;$&quot;,float(10, 2000, &quot;%.2f&quot;))}}&quot;,&#10;    &quot;variants&quot;: &quot;{{random(&quot;black&quot;,&quot;red&quot;,&quot;blue&quot;, &quot;brown&quot;, &quot;green&quot;)}}&quot;,&#10;    &quot;company&quot;: &quot;{{company().toUpperCase()}}&quot;,&#10;    &quot;productName&quot;:&quot;{{random(&quot;Bomber Jacket&quot;, &quot;Hermes Scarf&quot;, &quot;Plain Crew Neck T-Shirt&quot;, &quot;Wool Mittens&quot;, &quot;Argyle Socks&quot;, &quot;Leather Belt&quot;, &quot;Cashmere Sweater&quot;, &quot;Trench Coat&quot;)}}&quot;,&#10;    &quot;productRating&quot;:&quot;{{integer(0,5)}}&quot;,&#10;    &quot;productDescription&quot;:  &quot;{{lorem(30, &quot;words&quot;)}}&quot;&#10;  }"/>
+    </service-input>
+    <service-output passthrough="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="ProductID" order="" paramOrder="0" parentOrder="0" passnull="false" sms-name="" src="$.id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="StockAvailable" order="" paramOrder="0" parentOrder="0" passnull="false" sms-name="" src="$.stockAvailable" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Cost" order="" paramOrder="0" parentOrder="0" passnull="false" sms-name="" src="$.cost" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Variants" order="" paramOrder="0" parentOrder="0" passnull="false" sms-name="" src="$.variants" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="ProductName" order="" paramOrder="0" parentOrder="0" passnull="false" sms-name="" src="$.productName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="ProductRating" order="" paramOrder="0" parentOrder="0" passnull="false" sms-name="" src="$.productRating" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="ProductDescription" order="" paramOrder="0" parentOrder="0" passnull="false" sms-name="" src="$.productDescription" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

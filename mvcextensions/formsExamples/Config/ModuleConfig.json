@@ -1,0 +1,45 @@
+{
+    "Forms": {
+        "desktop": {
+            "confirmData": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "formsExamples/confirmDataController",
+                "FormName": "formsExamples/confirmData",
+                "friendlyName": "confirmData"
+            },
+            "formData": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "formsExamples/formDataController",
+                "FormName": "formsExamples/formData"
+            },
+            "listProducts": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "formsExamples/listProductsController",
+                "FormName": "formsExamples/listProducts"
+            },
+            "principalForm": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "formsExamples/principalFormController",
+                "FormName": "formsExamples/principalForm"
+            },
+            "productsDetails": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "formsExamples/productsDetailsController",
+                "FormName": "formsExamples/productsDetails"
+            }
+        }
+    },
+    "ModuleName": "formsExamples",
+    "ModuleType": "UIModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "formsExamples/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        }
+    }
+}

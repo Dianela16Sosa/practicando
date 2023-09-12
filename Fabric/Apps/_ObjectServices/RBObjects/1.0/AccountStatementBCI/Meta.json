@@ -1,0 +1,16 @@
+{
+  "type" : "svcdriven",
+  "description" : "For new account statement services given by bank",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "searchDocumentBCI" : "searchDocumentBCIMapping",
+    "getDocument" : "getDocumentMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

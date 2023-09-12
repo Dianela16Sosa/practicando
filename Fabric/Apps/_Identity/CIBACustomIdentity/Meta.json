@@ -1,0 +1,14 @@
+{
+  "name" : "CIBACustomIdentity",
+  "type" : "custom",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"pre_mfa_token_timeout\":3,\"mfa_url\":\"http://rg3dsrw-infinty.bciperupriv.pe:9103/services/CIBAValidationOrchService/validateRequest\",\"header_params\":[\"x-kony-app-key\",\"x-kony-app-secret\"],\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"is_mfa_enabled\":true,\"provider_params\":{},\"body_params\":{},\"custom_idp_url\":\"http://rg3dsrw-infinty.bciperupriv.pe:9103/services/CIBAAuthOrchService\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false
+}

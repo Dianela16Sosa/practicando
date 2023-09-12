@@ -1,0 +1,22 @@
+{
+    "AS_Segment_baf0c6b444a24df4a3666d0d9feb0305": {
+        "id": "AS_Segment_baf0c6b444a24df4a3666d0d9feb0305",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_db18dc1e8c6445c1945998a5be2cb2b1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.view.detailProductContainer.isVisible = false;\n//self.view.detailContainer.isVisible = false;\n\n//No funciona de esta manera:\n//let products = getProducts[\"responseList\"];\n\nlet products = kony.store.getItem(\"Products\");\nconsole.log(products);\n\n//Para obtener el elemento seleccionado\nlet data = self.view.list.selectedRowItems;\nconsole.log(data);\n\nlet index = products.findIndex((p) => \n       p.ProductId == data[0].lblProductId && \n       p.ProductName == data[0].lblProductName);\n\nconsole.log(index);\n\nif(index >= 0) {\n  self.view.productName.text = products[index].ProductName;\n  self.view.productId.text = products[index].ProductId;\n  self.view.productRating.text = products[index].ProductRating;\n  self.view.lblCost.text = products[index].Cost;\n  self.view.lblStock.text = products[index].StockAvailable === \"true\" ? \"Si\" : \"No\";\n  self.view.productDescription.text = products[index].ProductDescription;\n  \n  //self.view.detailTitleContainer.isVisible = true;\n  //self.view.detailContainer.isVisible = true;\n  self.view.detailProductContainer.isVisible = true;\n}"
+        }]
+    }
+}

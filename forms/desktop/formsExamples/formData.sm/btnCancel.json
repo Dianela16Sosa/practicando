@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "20"
+    },
+    "_skin_": "s320e060a5d04dd092ff44d24a4839a6",
+    "_text_": "CANCELAR",
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sfae6c47c4574a3f992e042da9cd0318",
+    "id": "btnCancel",
+    "ide_onClick": "AS_Button_d0ccd810eb6241edab1a796193e991f0",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ddeabf39bdd64ad1a02135be65730d40",
+    "name": "kony.ui.Button",
+    "parent": "containerButtons",
+    "pf": "formData",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "lblBtnCancel",
+    "wType": "Button",
+    "zindex": 1
+}

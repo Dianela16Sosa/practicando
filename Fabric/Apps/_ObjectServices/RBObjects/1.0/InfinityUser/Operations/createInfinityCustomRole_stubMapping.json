@@ -1,0 +1,29 @@
+{
+  "operationConfig" : {
+    "name" : "createInfinityCustomRole5016",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "public",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><set-param inputpath=\"createdby\" outputpath=\"createdby\"/><set-param inputpath=\"id\" outputpath=\"id\"/><set-param inputpath=\"createdts\" outputpath=\"createdts\"/></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "stubAPIs",
+      "serviceVersion" : "1.0",
+      "operationName" : "createInfinityCustomRole"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "InfinityUser",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

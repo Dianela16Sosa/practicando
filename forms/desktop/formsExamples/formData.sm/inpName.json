@@ -1,0 +1,75 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_blur_": {
+        "enabled": false,
+        "value": 56
+    },
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Ej. Juan Pérez",
+    "_skin_": "s374766c20754d04baa02419341b4fea",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "8dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300px"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "placeholderSkin": "s42ca975998c466d9cfc1701c64692f8"
+    },
+    "disabledSkins": {},
+    "focusskin": "s3ca5a41affd4a47bc0b7eee1fcb08b0",
+    "id": "inpName",
+    "ide_onDone": "AS_TextField_g1727712db2b445a98bc2a64250d1f72",
+    "ide_onTextChange": "AS_TextField_efb27f632dee490a9c05d705243b71c3",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "bbf9de09ca6f4419a94fde80b81e1345",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "containerRow1Col1",
+    "pf": "formData",
+    "placeholderskin": "s42ca975998c466d9cfc1701c64692f8",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

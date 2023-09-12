@@ -1,0 +1,20 @@
+{
+    "AS_TextField_efb27f632dee490a9c05d705243b71c3": {
+        "id": "AS_TextField_efb27f632dee490a9c05d705243b71c3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTextChange_ec3c23700ad049539b2a40d27fe38fb3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.validateName.call(this);\n\nself.enableButton.call(this);",
+            "disabled": false
+        }]
+    }
+}

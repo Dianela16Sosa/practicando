@@ -1,0 +1,214 @@
+{
+  "subType" : "customapp",
+  "description" : "This app is created from Studio App Test.\r\n",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "AccountEStatementBCI",
+    "version" : "1.0",
+    "etag" : "49d823ae-e745-4daa-ba6d-1008a57f5208"
+  }, {
+    "name" : "C360IntegrationService",
+    "version" : "1.0",
+    "etag" : "c207c595-1c65-47ed-915d-5206f3b660eb"
+  }, {
+    "name" : "dbpAdminConsoleServices",
+    "version" : "1.0",
+    "etag" : "ba7ef1f5-d3fe-41b4-a1e0-ebf173ddc550"
+  }, {
+    "name" : "dbpBBJavaServices",
+    "version" : "1.0",
+    "etag" : "ac24d92e-94a6-4ec6-bdb1-4a1e60fdf401"
+  }, {
+    "name" : "dbpBulkWireServices",
+    "version" : "1.0",
+    "etag" : "fe653a9b-c6da-46cc-9bee-bfcb5c68b095"
+  }, {
+    "name" : "dbpCardServices",
+    "version" : "1.0",
+    "etag" : "16922b15-e224-46ca-827b-249dc8411ed2"
+  }, {
+    "name" : "dbpChequeManagementServices",
+    "version" : "1.0",
+    "etag" : "430334e0-a1cd-427a-ba87-eee8508f3ff0"
+  }, {
+    "name" : "dbpCoreServices",
+    "version" : "1.0",
+    "etag" : "96b6bf7f-087a-45ce-ac3d-e55e2dd3d8b4"
+  }, {
+    "name" : "dbpDbxCustomerLogin",
+    "version" : "1.0",
+    "etag" : "f09198c3-8088-479c-8863-1274298105bf"
+  }, {
+    "name" : "dbpDemoServices",
+    "version" : "1.0",
+    "etag" : "05733e2a-3dd6-4e42-83bf-02d7dc1bd567"
+  }, {
+    "name" : "dbpHolidayServcies",
+    "version" : "1.0",
+    "etag" : "c41ef419-3032-444c-81c5-7406fca3286f"
+  }, {
+    "name" : "dbpMFAServices",
+    "version" : "1.0",
+    "etag" : "dac0e268-5cbe-4696-bc2a-f255f615811b"
+  }, {
+    "name" : "dbpNonProductServices",
+    "version" : "1.0",
+    "etag" : "3702a5be-729a-451d-a78b-986eb3ca846a"
+  }, {
+    "name" : "dbpProductServices",
+    "version" : "1.0",
+    "etag" : "50886dcf-48e4-4dec-9674-ef581376b6fd"
+  }, {
+    "name" : "dbpTransactionServices",
+    "version" : "1.0",
+    "etag" : "5caa6822-b99e-4421-9640-84c1575bc6b9"
+  }, {
+    "name" : "FetchDbxDb",
+    "version" : "1.0",
+    "etag" : "593b9497-435b-47f8-8ab8-e1c495e46e80"
+  }, {
+    "name" : "LimitsAndPermissions",
+    "version" : "1.0",
+    "etag" : "ab6070df-260c-48d3-ac09-51ce870e5ddd"
+  }, {
+    "name" : "LinkCardsJava",
+    "version" : "1.0",
+    "etag" : "a7acbcfe-265f-466b-8ba9-f185a30c1461"
+  }, {
+    "name" : "OnboardingTransfer",
+    "version" : "1.0",
+    "etag" : "c932e3bb-39cd-474f-a858-60a2d6d6b045"
+  }, {
+    "name" : "Products",
+    "version" : "1.0",
+    "etag" : "2a98cb12-6af4-4592-9e58-cdb0bd855b21"
+  }, {
+    "name" : "r21Services",
+    "version" : "1.0",
+    "etag" : "c3c14043-f1c2-4ab4-bfed-9cb8f3818d86"
+  }, {
+    "name" : "r21ServicesTransactionHistory",
+    "version" : "1.0",
+    "etag" : "a0b7e82e-8795-4d65-b288-6bb099aefaea"
+  }, {
+    "name" : "ScimAPIs",
+    "version" : "1.0",
+    "etag" : "8f9f22e8-3d32-494d-843a-530ee7b5e037"
+  }, {
+    "name" : "ServiceRequestJavaService",
+    "version" : "1.0",
+    "etag" : "fb763f02-4e9b-4468-b774-063142612e13"
+  }, {
+    "name" : "stubAPIs",
+    "version" : "1.0",
+    "etag" : "bbdd0aeb-5dd9-40cc-ae9c-c5027f671f0c"
+  }, {
+    "name" : "T24BulkPaymentAPIs",
+    "version" : "1.0",
+    "etag" : "6affbc87-81b5-42dd-bc5a-6a58dc0e0d8e"
+  }, {
+    "name" : "T24BulkPaymentServices",
+    "version" : "1.0",
+    "etag" : "1a3198c9-f172-423a-8fd7-56accb594b19"
+  }, {
+    "name" : "T24ISAccounts",
+    "version" : "1.0",
+    "etag" : "4357987f-a3dc-441d-b596-3ca5d893d258"
+  }, {
+    "name" : "T24ISBeneficiaries",
+    "version" : "1.0",
+    "etag" : "aa9c566a-72d8-4fe2-b4a3-7cc459016050"
+  }, {
+    "name" : "T24ISCards",
+    "version" : "1.0",
+    "etag" : "21abf2f1-b9c5-41c2-956b-f075aea43c9d"
+  }, {
+    "name" : "T24ISConsents",
+    "version" : "1.0",
+    "etag" : "9c15a4e0-802d-4cb5-ac40-83788e34f511"
+  }, {
+    "name" : "T24ISExtra",
+    "version" : "1.0",
+    "etag" : "4859ab7a-6745-4e9a-8841-ea35403fb4fd"
+  }, {
+    "name" : "T24ISForexService",
+    "version" : "1.0",
+    "etag" : "5692b4d8-7266-4aaf-aa93-533881a663de"
+  }, {
+    "name" : "T24ISOnboardingAccounts",
+    "version" : "1.0",
+    "etag" : "6281d4fd-5df2-473b-bea6-0a38e58fad96"
+  }, {
+    "name" : "T24ISOnboardingUser",
+    "version" : "1.0",
+    "etag" : "8056db74-34c4-4e00-9c19-e65b4d85e985"
+  }, {
+    "name" : "T24ISPaymentOrders",
+    "version" : "1.0",
+    "etag" : "77d699fc-d50e-4e49-b726-2f9114920702"
+  }, {
+    "name" : "T24ISStandingOrders",
+    "version" : "1.0",
+    "etag" : "7806a296-08c4-4ef3-a071-2b42a1fbc27a"
+  }, {
+    "name" : "T24ISStopPayments",
+    "version" : "1.0",
+    "etag" : "bffba193-0365-4a69-ad23-f97dbfa24966"
+  }, {
+    "name" : "T24ISTransactions",
+    "version" : "1.0",
+    "etag" : "42932c1a-193a-44b3-9f27-a39f0ae652c6"
+  }, {
+    "name" : "T24ISUser",
+    "version" : "1.0",
+    "etag" : "b9098507-f91e-4638-a784-3ff28230caee"
+  }, {
+    "name" : "UserManagementSettings",
+    "version" : "1.0",
+    "etag" : "feb884c8-30b2-42ff-9cb9-ace62f7ab6ef"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "dbpDBX",
+    "version" : "1.0",
+    "etag" : "7a48239e-1787-4475-a522-c1a8ec2f5caf"
+  }, {
+    "name" : "T24BulkPaymentsOrch",
+    "version" : "1.0",
+    "etag" : "2391edc9-bffd-46b3-a231-82e7ab7784c8"
+  }, {
+    "name" : "dbpAllLocations",
+    "version" : "1.0",
+    "etag" : "8eb59973-12a6-4f05-a6d6-2baf26914724"
+  }, {
+    "name" : "KmsEmailOrch",
+    "version" : "1.0",
+    "etag" : "3ddfdb71-92fd-4261-8c80-3240b0c27a04"
+  }, {
+    "name" : "CommonOrchestrationService",
+    "version" : "1.0",
+    "etag" : "416f5ca9-d28f-45d0-b17f-317d14e151bc"
+  }, {
+    "name" : "DashBoard",
+    "version" : "1.0",
+    "etag" : "1b5a77f4-46bc-4824-9604-a35380c72e08"
+  }, {
+    "name" : "Cards",
+    "version" : "1.0",
+    "etag" : "56de6fef-e41c-4ca6-b4fa-c77a4423fc9a"
+  }, {
+    "name" : "CoreCustomerFeatureActions",
+    "version" : "1.0",
+    "etag" : "fb055fb1-8ff1-4018-b46d-febb9743825d"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "ProductDataObjects",
+    "version" : "1.0",
+    "etag" : "6f02f847-8370-4d24-9dbb-1f06424f55e8"
+  }, {
+    "name" : "RBObjects",
+    "version" : "1.0",
+    "etag" : "6dfba147-5e72-4b5c-8b88-f90ed622e87b"
+  } ],
+  "identity" : [ "CIBACustomIdentity", "customHIDLogin", "DbxAPIIdentityService", "DbxUserLogin" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

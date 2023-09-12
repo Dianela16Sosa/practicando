@@ -1,0 +1,26 @@
+{
+    "AS_TextField_i2978542d23c4139986e00187f1c82ee": {
+        "id": "AS_TextField_i2978542d23c4139986e00187f1c82ee",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "formData",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d5cfc25d81ec4c2c9090d7ce9fdad82d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f4aa064c1e1e4d43a693b201dd89abe4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.validatePhoneNumber.call(this);\n\nself.enableButton.call(this);",
+            "parentId": null
+        }]
+    }
+}

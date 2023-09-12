@@ -1,0 +1,8 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "HIDProcessor-1.0.0.jar",
+    "type" : "jar"
+  } ],
+  "description" : "All Operations that use ClientIdentity token"
+}

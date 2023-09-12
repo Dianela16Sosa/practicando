@@ -1,0 +1,23 @@
+{
+    "AS_Form_i21108cf3936479bb5ade7978067f930": {
+        "id": "AS_Form_i21108cf3936479bb5ade7978067f930",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "confirmData",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ebd79b2789714628ae9c6b3733336412"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_hbf87e4fc10644368b22e70feba25bde",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//self.view.nameConfirm.text = kony.store.getItem(\"Name\");\n//self.view.ageConfirm.text = kony.store.getItem(\"Age\");\n//self.view.docTypeConfirm.text = kony.store.getItem(\"DocumentType\");\n//self.view.docNumberConfirm.text = kony.store.getItem(\"DocumentNumber\");\n//self.view.phoneConfirm.text = kony.store.getItem(\"PhoneNumber\");\n//self.view.emailConfirm.text = kony.store.getItem(\"Email\");",
+            "parentId": null
+        }]
+    }
+}

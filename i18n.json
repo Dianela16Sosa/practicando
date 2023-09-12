@@ -1,0 +1,73 @@
+{
+    "keys": [
+        "lblBtnCancel",
+        "title"
+    ],
+    "locales": {
+        "en_GB": {
+            "i18nStrings": {
+                "lblBtnCancel": "CANCEL",
+                "title": "Products"
+            },
+            "isCustomLocale": false,
+            "isSelected": true,
+            "layoutConfig": {
+                "mirrorContentAlignment": false,
+                "mirrorFlexPositionProperties": false,
+                "mirrorFlowHorizontalAlignment": false
+            }
+        },
+        "en_US": {
+            "i18nStrings": {
+                "lblBtnCancel": "CANCEL",
+                "title": "Products"
+            },
+            "isCustomLocale": false,
+            "isSelected": true,
+            "layoutConfig": {
+                "mirrorContentAlignment": false,
+                "mirrorFlexPositionProperties": false,
+                "mirrorFlowHorizontalAlignment": false
+            }
+        },
+        "es_AR": {
+            "i18nStrings": {
+                "lblBtnCancel": "CANCELAR",
+                "title": "Productos"
+            },
+            "isCustomLocale": false,
+            "isSelected": true,
+            "layoutConfig": {
+                "mirrorContentAlignment": false,
+                "mirrorFlexPositionProperties": false,
+                "mirrorFlowHorizontalAlignment": false
+            }
+        },
+        "es_CL": {
+            "i18nStrings": {
+                "lblBtnCancel": "CANCELAR",
+                "title": "Cancelar"
+            },
+            "isCustomLocale": false,
+            "isSelected": true,
+            "layoutConfig": {
+                "mirrorContentAlignment": false,
+                "mirrorFlexPositionProperties": false,
+                "mirrorFlowHorizontalAlignment": false
+            }
+        },
+        "es_ES": {
+            "i18nStrings": {
+                "lblBtnCancel": "",
+                "title": "Productos"
+            },
+            "isCustomLocale": false,
+            "isSelected": true,
+            "layoutConfig": {
+                "mirrorContentAlignment": false,
+                "mirrorFlexPositionProperties": false,
+                "mirrorFlowHorizontalAlignment": false
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+{
+  "dependentJars" : [ "commons-csv-1.0.jar", "dbp_poi-ooxml-3.9.jar", "layout-7.1.5.jar", "dbp_poi-ooxml-schemas-3.9.jar", "kernel-7.1.5.jar", "dbp_poi-3.9.jar", "mail-1.4.7.jar", "io-7.1.5.jar", "jmimemagic-0.1.5.jar" ]
+}

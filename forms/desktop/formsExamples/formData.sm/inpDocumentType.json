@@ -1,0 +1,77 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "s02f8597d01f4421b9111d71c1c1471d",
+    "_top_": {
+        "type": "number",
+        "value": "8"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "dropdownimage": "listboxarw.png",
+    "focusskin": "s87fecb0c55349878bf2d077a539b5f2",
+    "groupcells": false,
+    "id": "inpDocumentType",
+    "ide_onSelection": "AS_ListBox_be5e0ebedc984d73b67910f0487b4a98",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "jdb8b78525bd4a73b7406a21d55e673d",
+    "masterdata": [
+        [
+            "DNI",
+            "DNI"
+        ],
+        [
+            "PA",
+            "Pasaporte"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "containerRow2Col1",
+    "pf": "formData",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "DNI",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "DNI",
+        "DNI"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

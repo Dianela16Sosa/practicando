@@ -1,0 +1,33 @@
+{
+    "AS_Button_bae15e809ae84308a1e5cb72f01f1093": {
+        "id": "AS_Button_bae15e809ae84308a1e5cb72f01f1093",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "listProducts",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b5dd6f6eb8de4956aee7359be6d9152d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a016cbcc28614082a62cbfed05357ecf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.store.setItem(\"Clear\", true);",
+            "parentId": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__ef0e160962bb4a62a0a561245bfcf530",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "formData",
+            "formKUID": "d5cfc25d81ec4c2c9090d7ce9fdad82d",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "formsExamples",
+            "isCustomInput": false
+        }]
+    }
+}

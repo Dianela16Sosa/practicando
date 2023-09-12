@@ -1,0 +1,28 @@
+{
+    "AS_Button_b14cd005127a4ddba7c064d44da4f1cd": {
+        "id": "AS_Button_b14cd005127a4ddba7c064d44da4f1cd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "confirmData",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ebd79b2789714628ae9c6b3733336412"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__d0a3a729f2ad469c8d66ea427dfc1d22",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "generatePDF",
+            "display": "generatePDF",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

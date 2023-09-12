@@ -1,0 +1,60 @@
+{
+    "AS_Form_a4d675822bb44e68ae897474fed04b61": {
+        "id": "AS_Form_a4d675822bb44e68ae897474fed04b61",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "listProducts",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b5dd6f6eb8de4956aee7359be6d9152d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d5304d2b470e4dde8234fae050526636",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.init.call(this, getProducts[\"httpStatusCode\"], getProducts[\"responseList\"]);\nconsole.log(\"hola\");\n/*\nself.view.list.removeAll();\nlet products = getProducts[\"responseList\"];\nkony.store.setItem(\"Products\", products);\n\nlet data = products.map(function(p) {\n    let product = {\n        imgProduct: \"imagedrag.png\",\n        lblProductName: p.ProductName,\n        lblProductId: p.ProductId,\n        AngleRight: \"\"\n    }\n    return product;\n});\n\nfor(let p in products) {\n  let existe = data.findIndex((d) => d.lblProductId === products[p].ProductId && d.lblProductName === products[p].ProductName);\n  if(existe < 0) {\n    let product = {\n      imgProduct: \"imagedrag.png\",\n      lblProductName: products[p].ProductName,\n      lblProductId: products[p].ProductId,\n      AngleRight: \"\"\n    };\n    \n    data.push(product);\n  }\n}\n\nself.view.list.addAll(data);*/\n//self.view.list.masterData = data;",
+            "parentId": "INVOKE_SERVICE_c501c3410c804c9bbca2672dd375ca95",
+            "callbackType": "Callback",
+            "disabled": false
+        }, {
+            "id": "LOADING_INDICATOR_i3f72ffb85694a8d88ae2a2925cf1d48",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_c501c3410c804c9bbca2672dd375ca95",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "LOADING_INDICATOR_b5d8aad2daee4dc38b3e8086ab885236",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_SERVICE_c501c3410c804c9bbca2672dd375ca95",
+            "type": "INVOKE_ASYNC_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "Products",
+                "serviceid": "2879666b-f548-4cd5-84ef-c13fd4e2ba99",
+                "type": "integration",
+                "operationname": "getProducts",
+                "operationid": "32789"
+            },
+            "enableMappingEditor": true
+        }]
+    }
+}

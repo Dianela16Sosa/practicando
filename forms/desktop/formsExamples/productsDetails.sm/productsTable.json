@@ -1,0 +1,171 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTable",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "cost": "",
+            "id": "",
+            "name": "",
+            "rating": "",
+            "stock": ""
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        1,
+        0,
+        1
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "cellBorder": "1px solid #F4F4F4",
+    "columnheadersconfig": [
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "ID",
+            "columnHeaderType": "text",
+            "columnID": "id",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 30,
+            "ide_onClick": null,
+            "isColumnSortable": false,
+            "kuid": "ec60e60b58304794b6c2570685f09f42"
+        },
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "Name",
+            "columnHeaderType": "text",
+            "columnID": "name",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 35,
+            "ide_onClick": null,
+            "isColumnSortable": true,
+            "kuid": "h6e4e64e90894d94967951b2df6e79d0"
+        },
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "Rating",
+            "columnHeaderType": "text",
+            "columnID": "rating",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 10,
+            "ide_onClick": null,
+            "isColumnSortable": true,
+            "kuid": "ic6b4b4482604ed7bf275e560a12e2ab"
+        },
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "Stock Available",
+            "columnHeaderType": "text",
+            "columnID": "stock",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 10,
+            "ide_onClick": null,
+            "isColumnSortable": false,
+            "kuid": "ec8ac617908f4f1784f37b8f288102b9"
+        },
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "Cost ($)",
+            "columnHeaderType": "text",
+            "columnID": "cost",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 15,
+            "ide_onClick": null,
+            "isColumnSortable": false,
+            "kuid": "b2c5fc3bec6146ae9c91e676d00bb131"
+        }
+    ],
+    "columnids": [
+        "id",
+        "name",
+        "rating",
+        "stock",
+        "cost"
+    ],
+    "columntype": [
+        "text",
+        "text",
+        "text",
+        "text",
+        "text"
+    ],
+    "containerweight": 100,
+    "contentalignment": 5,
+    "counter": "04",
+    "crInstance": null,
+    "desktopweb": {
+        "psp": {
+            "dockingHeader": true,
+            "enableScrollBar": 1
+        }
+    },
+    "disabledSkins": {},
+    "dockingheader": true,
+    "enablescrollbar": 1,
+    "focusedindex": null,
+    "focuseditem": null,
+    "gridlinestyle": "solid",
+    "headerskin": "s01b2d5404b94be488b88595d85d83fd",
+    "id": "productsTable",
+    "info": null,
+    "iscustomlayout": false,
+    "ismultiselect": false,
+    "isvisible": true,
+    "kuid": "a13a861f82c6449b9bd907b0a2e33e1a",
+    "name": "kony.ui.DataGrid",
+    "paddinginpixel": false,
+    "parent": "containerProducts",
+    "pf": "productsDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "rowalternateskin": "sef1fbcabc104a189a3cc0a3354960e0",
+    "rowcount": 1,
+    "rowfocusskin": "s93b75bb7be64a1594ae8658c9cdd9c9",
+    "rownormalskin": "s3c973998121456a881e9598379e6858",
+    "selectedcellindex": null,
+    "selectedcellitem": null,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditem": null,
+    "selecteditems": null,
+    "showcolumnheaders": true,
+    "wType": "DataGrid",
+    "zindex": 1
+}

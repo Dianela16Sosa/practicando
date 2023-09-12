@@ -1,0 +1,10 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "CustomProcessors.jar",
+    "type" : "jar"
+  }, {
+    "name" : "TriggerEvents.jar",
+    "type" : "jar"
+  } ]
+}

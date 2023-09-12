@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" description="" endpoint="default" groupType="" id="UpdateUser" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.hid.common.ClientBasePreprocessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://actividcert.bancobci.pe/scim/BCIPERUHIDDEV/v2/Users/$userId"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="PUT"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" paramOrder="0" parentOrder="0" sms-name="" src="constant" sourcevalue="application/scim+json;charset=utf-8" srcformatvalue="" target="" targetdatatype="" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Bearer uVOYcAAAAX3n2tqLIaVA6Ge/lHjBIHH9GhDbptZY" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Accept" order="" paramOrder="0" parentOrder="0" sms-name="" src="constant" sourcevalue="*/*" srcformatvalue="" target="" targetdatatype="" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="39340" description="" encode="true" format="None" formatvalue="" name="userId" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="37780" value="39340">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="externalId" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Testing" value="">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;    &quot;externalId&quot;: &quot;$externalId&quot;&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;externalId&quot;: &quot;$externalId&quot;&#10;}">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value="{&#10;    &quot;schemas&quot;: [&#10;        &quot;urn:ietf:params:scim:schemas:core:2.0:User&quot;,&#10;        &quot;urn:hid:scim:api:idp:2.0:UserDevice&quot;,&#10;        &quot;urn:hid:scim:api:idp:2.0:UserAttribute&quot;,&#10;        &quot;urn:hid:scim:api:idp:2.0:UserAuthenticator&quot;&#10;    ],&#10;    &quot;id&quot;: &quot;39340&quot;,&#10;    &quot;externalId&quot;: &quot;Giri&quot;,&#10;    &quot;meta&quot;: {&#10;        &quot;resourceType&quot;: &quot;User&quot;,&#10;        &quot;created&quot;: &quot;2021-12-14T05:00:00Z&quot;,&#10;        &quot;location&quot;: &quot;https://actividcert.bancobci.pe:443/scim/BCIPERUHIDDEV/v2/Users/39340&quot;,&#10;        &quot;version&quot;: &quot;1&quot;&#10;    },&#10;    &quot;userName&quot;: &quot;Giri&quot;,&#10;    &quot;name&quot;: {&#10;        &quot;familyName&quot;: &quot;Nandhini&quot;,&#10;        &quot;givenName&quot;: &quot;Daepur&quot;&#10;    },&#10;    &quot;displayName&quot;: &quot;Daepur Nandhini&quot;,&#10;    &quot;userType&quot;: &quot;FTRESS&quot;,&#10;    &quot;active&quot;: true,&#10;    &quot;emails&quot;: [&#10;        {&#10;            &quot;value&quot;: &quot;DSNandhini@itssglobal.com&quot;&#10;        }&#10;    ],&#10;    &quot;phoneNumbers&quot;: [&#10;        {&#10;            &quot;value&quot;: &quot;+919094555174&quot;&#10;        }&#10;    ],&#10;    &quot;groups&quot;: [&#10;        {&#10;            &quot;type&quot;: &quot;Group&quot;,&#10;            &quot;display&quot;: &quot;Usuarios Temenos Infinity&quot;,&#10;            &quot;value&quot;: &quot;UG_ROOT&quot;,&#10;            &quot;$ref&quot;: &quot;https://actividcert.bancobci.pe:443/scim/BCIPERUHIDDEV/v2/Groups/UG_ROOT&quot;&#10;        }&#10;    ],&#10;    &quot;roles&quot;: [],&#10;    &quot;urn:hid:scim:api:idp:2.0:UserAttribute&quot;: {&#10;        &quot;attributes&quot;: [&#10;            {&#10;                &quot;name&quot;: &quot;ATR_MOBILE&quot;,&#10;                &quot;type&quot;: &quot;string&quot;,&#10;                &quot;value&quot;: &quot;+919094555174&quot;,&#10;                &quot;readOnly&quot;: false&#10;            },&#10;            {&#10;                &quot;name&quot;: &quot;LASTNAME&quot;,&#10;                &quot;type&quot;: &quot;string&quot;,&#10;                &quot;value&quot;: &quot;Nandhini&quot;,&#10;                &quot;readOnly&quot;: false&#10;            },&#10;            {&#10;                &quot;name&quot;: &quot;FIRSTNAME&quot;,&#10;                &quot;type&quot;: &quot;string&quot;,&#10;                &quot;value&quot;: &quot;Daepur&quot;,&#10;                &quot;readOnly&quot;: false&#10;            },&#10;            {&#10;                &quot;name&quot;: &quot;ATR_EMAIL&quot;,&#10;                &quot;type&quot;: &quot;string&quot;,&#10;                &quot;value&quot;: &quot;DSNandhini@itssglobal.com&quot;,&#10;                &quot;readOnly&quot;: false&#10;            }&#10;        ]&#10;    },&#10;    &quot;urn:hid:scim:api:idp:2.0:UserAuthenticator&quot;: {&#10;        &quot;authenticators&quot;: [&#10;            {&#10;                &quot;display&quot;: &quot;AT_STDPWD&quot;,&#10;                &quot;value&quot;: &quot;39340.AT_STDPWD&quot;,&#10;                &quot;$ref&quot;: &quot;https://actividcert.bancobci.pe:443/scim/BCIPERUHIDDEV/v2/Authenticator/39340.AT_STDPWD&quot;&#10;            },&#10;            {&#10;                &quot;display&quot;: &quot;AT_ACTPWD&quot;,&#10;                &quot;value&quot;: &quot;39340.AT_ACTPWD&quot;,&#10;                &quot;$ref&quot;: &quot;https://actividcert.bancobci.pe:443/scim/BCIPERUHIDDEV/v2/Authenticator/39340.AT_ACTPWD&quot;&#10;            }&#10;        ]&#10;    },&#10;    &quot;urn:hid:scim:api:idp:2.0:UserDevice&quot;: {&#10;        &quot;devices&quot;: []&#10;    }&#10;}"/>
+    </service-input>
+    <service-output passthrough="false">
+        <dataset defaultvalue="" id="emails" order="" paramOrder="19" parentOrder="0" src="$.emails[*]" testvalue="">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="value" order="" paramOrder="20" parentOrder="19" passnull="false" sms-name="" src="value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </dataset>
+        <dataset defaultvalue="" id="phoneNumbers" order="" paramOrder="21" parentOrder="0" src="$.phoneNumbers[*]" testvalue="">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="value" order="" paramOrder="22" parentOrder="21" passnull="false" sms-name="" src="value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </dataset>
+        <dataset defaultvalue="" id="groups" order="" paramOrder="23" parentOrder="0" src="$.groups[*]" testvalue="">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="type" order="" paramOrder="24" parentOrder="23" passnull="false" sms-name="" src="type" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="display" order="" paramOrder="25" parentOrder="23" passnull="false" sms-name="" src="display" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="value" order="" paramOrder="26" parentOrder="23" passnull="false" sms-name="" src="value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="$ref" order="" paramOrder="27" parentOrder="23" passnull="false" sms-name="" src="$ref" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </dataset>
+        <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="schemas" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.schemas[*]" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="errorCode" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.errorCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="detail" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.detail" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="status" order="" paramOrder="4" parentOrder="0" passnull="false" sms-name="" src="$.status" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="5" parentOrder="0" passnull="false" sms-name="" src="$.id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="externalId" order="" paramOrder="6" parentOrder="0" passnull="false" sms-name="" src="$.externalId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="userName" order="" paramOrder="12" parentOrder="0" passnull="false" sms-name="" src="$.userName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="displayName" order="" paramOrder="16" parentOrder="0" passnull="false" sms-name="" src="$.displayName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="userType" order="" paramOrder="17" parentOrder="0" passnull="false" sms-name="" src="$.userType" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="boolean" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="active" order="" paramOrder="18" parentOrder="0" passnull="false" sms-name="" src="$.active" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="roles" order="" paramOrder="28" parentOrder="0" passnull="false" sms-name="" src="$.roles[*]" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <record id="meta" order="" paramOrder="7" parentOrder="0" src="$.meta">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="resourceType" order="" paramOrder="8" parentOrder="7" passnull="false" sms-name="" src="resourceType" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="created" order="" paramOrder="9" parentOrder="7" passnull="false" sms-name="" src="created" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="location" order="" paramOrder="10" parentOrder="7" passnull="false" sms-name="" src="location" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="version" order="" paramOrder="11" parentOrder="7" passnull="false" sms-name="" src="version" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </record>
+        <record id="name" order="" paramOrder="13" parentOrder="0" src="$.name">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="familyName" order="" paramOrder="14" parentOrder="13" passnull="false" sms-name="" src="familyName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="givenName" order="" paramOrder="15" parentOrder="13" passnull="false" sms-name="" src="givenName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </record>
+        <record id="urn:hid:scim:api:idp:2.0:UserAttribute" order="" paramOrder="29" parentOrder="0" src="$.urn:hid:scim:api:idp:2.0:UserAttribute">
+            <dataset defaultvalue="" id="attributes" order="" paramOrder="30" parentOrder="29" src="attributes[*]" testvalue="">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="31" parentOrder="30" passnull="false" sms-name="" src="name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="type" order="" paramOrder="32" parentOrder="30" passnull="false" sms-name="" src="type" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="value" order="" paramOrder="33" parentOrder="30" passnull="false" sms-name="" src="value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+                <param datatype="boolean" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="readOnly" order="" paramOrder="34" parentOrder="30" passnull="false" sms-name="" src="readOnly" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+        </record>
+        <record id="urn:hid:scim:api:idp:2.0:UserAuthenticator" order="" paramOrder="35" parentOrder="0" src="$.urn:hid:scim:api:idp:2.0:UserAuthenticator">
+            <dataset defaultvalue="" id="authenticators" order="" paramOrder="36" parentOrder="35" src="authenticators[*]" testvalue="">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="display" order="" paramOrder="37" parentOrder="36" passnull="false" sms-name="" src="display" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="value" order="" paramOrder="38" parentOrder="36" passnull="false" sms-name="" src="value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="$ref" order="" paramOrder="39" parentOrder="36" passnull="false" sms-name="" src="$ref" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+        </record>
+        <record id="urn:hid:scim:api:idp:2.0:UserDevice" order="" paramOrder="40" parentOrder="0" src="$.urn:hid:scim:api:idp:2.0:UserDevice">
+            <dataset defaultvalue="" id="devices" order="" paramOrder="41" parentOrder="40" src="devices[*]" testvalue="">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="display" order="" paramOrder="42" parentOrder="41" passnull="false" sms-name="" src="display" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="value" order="" paramOrder="43" parentOrder="41" passnull="false" sms-name="" src="value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="$ref" order="" paramOrder="44" parentOrder="41" passnull="false" sms-name="" src="$ref" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+        </record>
+    </service-output>
+</service>

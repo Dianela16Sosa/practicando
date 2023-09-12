@@ -1,0 +1,75 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "s374766c20754d04baa02419341b4fea",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "8px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "placeholderSkin": "s42ca975998c466d9cfc1701c64692f8",
+        "psp": {}
+    },
+    "disabledSkins": {
+        "hoverSkin": "sf6a1d54c1ca4b479a181c8e3d78eb0f"
+    },
+    "focusskin": "s9be5f8b28b74036b83ef4a9c940efa7",
+    "id": "inpAge",
+    "ide_onDone": "AS_TextField_e57524c5ce4a4acebaa319ed8dafc0a7",
+    "ide_onTextChange": "AS_TextField_f7996caaf3f841cfba38e8114e0f2271",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "d334f07f6e314cfe837e98e451446e01",
+    "mode": "N",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "containerRow1Col2",
+    "pf": "formData",
+    "placeholderskin": "s42ca975998c466d9cfc1701c64692f8",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "N",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

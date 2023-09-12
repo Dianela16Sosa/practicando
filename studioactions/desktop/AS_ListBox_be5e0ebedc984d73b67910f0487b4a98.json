@@ -1,0 +1,23 @@
+{
+    "AS_ListBox_be5e0ebedc984d73b67910f0487b4a98": {
+        "id": "AS_ListBox_be5e0ebedc984d73b67910f0487b4a98",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "formData",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d5cfc25d81ec4c2c9090d7ce9fdad82d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_cb2be9ea3560409bbffe140e0cd83ae2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "console.log(self.view.inpDocumentType.selectedKey);\nconsole.log(self.view.inpDocumentType.selectedKeyValue[0]);\nconsole.log(self.view.inpDocumentType.selectedKeyValue[1]);\n\nself.validateDocNumber.call(this);\n\nself.enableButton.call(this);",
+            "parentId": null
+        }]
+    }
+}

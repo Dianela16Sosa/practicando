@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "40"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc32f5664d7f46e299182951348ad52f",
+    "_text_": "Generar PDF",
+    "_top_": {
+        "type": "string",
+        "value": "46dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sa4d119ebc584a1181e132e3b1fd1fa9",
+    "id": "btnGeneratePDF",
+    "ide_onClick": "AS_Button_b14cd005127a4ddba7c064d44da4f1cd",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d658a45a5b174929b6afa000a156f19b",
+    "name": "kony.ui.Button",
+    "parent": "containerRow2",
+    "pf": "confirmData",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "tooltip": "Generar PDF",
+    "wType": "Button",
+    "zindex": 1
+}

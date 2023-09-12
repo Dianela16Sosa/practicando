@@ -1,0 +1,33 @@
+{
+    "AS_Button_eb0afa99d466438380cc624fd748a87c": {
+        "id": "AS_Button_eb0afa99d466438380cc624fd748a87c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "formData",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d5cfc25d81ec4c2c9090d7ce9fdad82d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_aca8b226895840abac68122f1855d648",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.store.setItem(\"Name\", self.view.inpName.text);\nkony.store.setItem(\"Age\", self.view.inpAge.text);\nkony.store.setItem(\"DocumentType\", self.view.inpDocumentType.selectedKeyValue[1]);\nkony.store.setItem(\"DocumentNumber\", self.view.inpDocumentNumber.text);\nkony.store.setItem(\"Email\", self.view.inpEmail.text);\nkony.store.setItem(\"PhoneNumber\", self.view.inpPhoneNumber.text);",
+            "parentId": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__h419d6e4260f4160a0bdc917b54ac45e",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "confirmData",
+            "formKUID": "ebd79b2789714628ae9c6b3733336412",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "formsExamples",
+            "isCustomInput": false
+        }]
+    }
+}

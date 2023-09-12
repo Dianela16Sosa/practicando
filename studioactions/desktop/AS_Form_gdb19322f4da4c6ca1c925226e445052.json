@@ -1,0 +1,61 @@
+{
+    "AS_Form_gdb19322f4da4c6ca1c925226e445052": {
+        "id": "AS_Form_gdb19322f4da4c6ca1c925226e445052",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "productsDetails",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b126d65192364a40ae3c0685dc721f88"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "LOADING_INDICATOR_c3e05412e27e49bcabb2e31c037052a3",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true",
+            "text": "Cargando productos..."
+        }, {
+            "id": "ADD_SNIPPET_jb6ee1520aaa4ccb8e9f31c2e1a6a011",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(getProducts[\"opstatus\"] === 0) {\n  let products = getProducts[\"responseList\"];\n  //console.log(products);\n  let index = 1;\n  for(let p in products) {\n   //console.log(products[p]);\n    self.view.productsTable.addDataAt({\n      id: products[p].ProductId,\n      name: products[p].ProductName,\n      rating: products[p].ProductRating,\n      stock: products[p].StockAvailable === \"true\" ? \"Yes\" : \"No\",\n      cost: products[p].Cost\n    }, index);\n    index = index + 1;\n  }\n}",
+            "parentId": "INVOKE_SERVICE_ee541d0227944e0882d2bb60b99c9993",
+            "callbackType": "Callback"
+        }, {
+            "id": "LOADING_INDICATOR_i379052f39004461b6e88cd583dd9e0f",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_ee541d0227944e0882d2bb60b99c9993",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_SERVICE_ee541d0227944e0882d2bb60b99c9993",
+            "type": "INVOKE_ASYNC_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "Products",
+                "serviceid": "2879666b-f548-4cd5-84ef-c13fd4e2ba99",
+                "type": "integration",
+                "operationname": "getProducts",
+                "operationid": "32789"
+            },
+            "enableMappingEditor": true,
+            "disabled": false
+        }]
+    }
+}

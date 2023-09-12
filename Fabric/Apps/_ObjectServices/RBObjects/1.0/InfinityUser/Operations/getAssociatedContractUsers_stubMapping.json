@@ -1,0 +1,28 @@
+{
+  "operationConfig" : {
+    "name" : "getAssociatedContractUsers7846",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "public",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "stubAPIs",
+      "serviceVersion" : "1.0",
+      "operationName" : "getAssociatedContractUsers"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "InfinityUser",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

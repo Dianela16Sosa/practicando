@@ -1,0 +1,41 @@
+{
+    "AS_Button_hf3c4e7bb4a642959762d5dc4c92f10f": {
+        "id": "AS_Button_hf3c4e7bb4a642959762d5dc4c92f10f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "formData",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d5cfc25d81ec4c2c9090d7ce9fdad82d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f60fa937455f40f0a4c00528ef13e51b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(getProducts[\"opstatus\"] === 0) {\n  console.log(getProducts[\"responseList\"]);\n}",
+            "parentId": "INVOKE_SERVICE_a0c778f4be47452480c202c7f9f2cac2",
+            "callbackType": "Callback"
+        }, {
+            "id": "INVOKE_SERVICE_a0c778f4be47452480c202c7f9f2cac2",
+            "type": "INVOKE_ASYNC_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "Products",
+                "serviceid": "2879666b-f548-4cd5-84ef-c13fd4e2ba99",
+                "type": "integration",
+                "operationname": "getProducts",
+                "operationid": "32789"
+            },
+            "enableMappingEditor": true
+        }]
+    }
+}
